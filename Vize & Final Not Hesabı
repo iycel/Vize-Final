@@ -1,0 +1,19 @@
+vize = int(input("Vize notunu giriniz"))
+final = int(input("Final notunu giriniz"))
+if vize > 100 or final > 100:
+    print("Hatalı değer girdiniz")
+else:
+    ort = (vize/100)*40 + (final/100)*60
+    print("Yıl sonu ortalaman", ort)
+    print("Vize notunuz : ", vize)
+    print("Final notunuz : ", final)
+    if 90 <= ort:
+        print(f"Yıl sonu ortalamanız : {ort} \nNotunuz karşılığı : A")
+    elif 80 <= ort:
+        print(f"Yıl sonu ortalamanız : {ort} \nNotunuz karşılığı : B")
+    elif 70 <= ort:
+        print(f"Yıl sonu ortalamanız : {ort} \nNotunuz karşılığı : C")
+    elif 60 <= ort:
+        print(f"Yıl sonu ortalamanız : {ort} \nNotunuz karşılığı : D")
+    else:
+        print(f"Yıl sonu ortalamanız : {ort} \nNotunuz karşılığı : F")
