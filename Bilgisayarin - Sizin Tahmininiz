@@ -1,0 +1,17 @@
+import random
+num = int(input("1 ile 10 arasinda bir sayi giriniz"))
+if num > 10 or num <= 0:
+    print(f"{num} degeri 1 ile 10 arasinda degildir")
+if num < 10 and num >= 1:
+    com = random.randint(1,11)
+    if num == com:
+        print("Kazandiniz")
+    elif num != com:
+        if num < com:
+            print("Bilgisayarin tahmini :", com)
+            print("Sizin tahmininiz :", num)
+            print("Sayilar farkli ve Bilgisayarin tahmini daha buyuk")
+        elif num > com:
+            print("Bilgisayarin tahmini :", com)
+            print("Sizin tahmininiz :", num)
+            print("Sayilar farkli ve Bilgisayarin tahmini daha kucuk")
